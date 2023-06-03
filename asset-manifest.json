@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Yelp-App/static/css/main.e4535d50.css",
+    "main.css": "/Yelp-App/static/css/main.33df284d.css",
     "main.js": "/Yelp-App/static/js/main.b33d9b92.js",
     "static/media/burger2.png": "/Yelp-App/static/media/burger2.6cc99c64fe87401cda94.png",
     "static/media/burger3.png": "/Yelp-App/static/media/burger3.6985c3f54810487e480a.png",
@@ -51,11 +51,11 @@
     "static/media/arrow.svg": "/Yelp-App/static/media/arrow.c7277702ed70f76dedffa3d044524086.svg",
     "static/media/active_plus.svg": "/Yelp-App/static/media/active_plus.f4e153222e619029dc2d7f9afc69bf6d.svg",
     "static/media/plus .svg": "/Yelp-App/static/media/plus .bd8efbd7e0d849790dfb5b75330aab60.svg",
-    "main.e4535d50.css.map": "/Yelp-App/static/css/main.e4535d50.css.map",
+    "main.33df284d.css.map": "/Yelp-App/static/css/main.33df284d.css.map",
     "main.b33d9b92.js.map": "/Yelp-App/static/js/main.b33d9b92.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4535d50.css",
+    "static/css/main.33df284d.css",
     "static/js/main.b33d9b92.js"
   ]
 }
