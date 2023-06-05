@@ -1,0 +1,200 @@
+.basket{
+    position: absolute;
+    top:25px;
+    right: 0px;
+    z-index: 10;
+    @media (max-width: 1090px) {
+        top: 0;
+    }
+    @media (max-height: 480px) {
+        z-index: 60; 
+    }
+
+    @media (max-width: 360px) {
+        
+    }
+
+    &-container{
+        display: block;
+        width: 350px;
+        height: 744px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 46px rgba(0, 0, 0, 0.2);
+        border-radius: 30px 0px 0px 30px;
+        padding: 48px 21px 34px 31px;
+        box-sizing: border-box;
+        margin:  auto;
+        @media (max-width: 480px) {
+            width: 298px;
+            height: 708px;
+            padding: 48px 21px 34px 16px;
+            z-index: 60;
+        }
+        @media (max-width: 360px) {
+            width: 266px;
+            height: 708px;
+        }
+        &_stopwatch{
+            margin: 133px 0 10px 0;
+            text-align: center;
+            &-text{
+                font-family: 'Spartan';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+            }
+        }
+
+    }
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 480px) {
+            width: 168px;
+            margin-left: 50px;
+            
+        }
+        &-title{
+            font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 34px;
+            @media (max-width: 480px) {
+                margin-right: 20px;
+            }
+        }
+        &_arrow-container{
+            width: 46px;
+            height: 46px;
+            background: #F5F6F7;
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+        
+        }
+        &_arrow-img{
+            width: 17px;
+            height: 8px;
+            position: absolute;
+            top: 54%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
+    }
+   
+    &_content{
+        width: 253px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        @media (max-width: 360px) {
+            width: 207px;
+        }
+    }
+    &_wrapper-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 47px;
+        height: 47px;
+        background: #FFF0A5;
+        border-radius: 15px;
+        margin-right: 14px;
+        padding: 0;
+        @media (max-width: 360px) {
+            width: 38px;
+            height: 38px;
+            margin-right: 6px;
+        }
+    }
+    &-img{
+        width: 36px;
+        height: 36px;
+    }
+    &_description{
+        width: 116px;
+        height: 47px;
+        &-title{
+            font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 11px;
+            margin: 0;
+            @media (max-width: 360px) {
+                font-size: 10px;
+            }
+        }
+        &-text{
+            width: 89px;
+            text-align: justify;
+            font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 7px;
+            line-height: 10px;
+            color: #898686;
+
+        }
+
+    }
+    &_minus{
+        cursor: pointer;
+        margin-right: 10px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    &_plus{
+        cursor: pointer;
+        margin-right: 10px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    &_quantity{
+        width: 9px;
+        height: 18px;
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        margin-right: 17px;
+    }
+    &_price{
+        width: 15px;
+        height: 18px;
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+    .button{
+        width: 252px;
+        height: 50px;
+        background: #2D9CDB;
+        border: none;
+        border-radius: 15px;
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 18px;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 34px;
+        right: 31px;
+        cursor: pointer;
+        @media (max-width: 360px) {
+            width: 203px;
+        }
+    }
+

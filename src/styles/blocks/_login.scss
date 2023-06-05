@@ -1,0 +1,213 @@
+@import 'mixins';
+
+.login_container{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: #DEEBFB;
+    border-radius: 30px;
+    padding: 101px 0 265px 0;
+    margin: 0 auto;
+    @media (max-width: 480px) {
+        max-width: 100vw;
+        padding: 32px 0 200px 0;
+    } 
+    @media (max-width: 360px) {
+        padding: 34px 0 90px 0;
+    } 
+ 
+}
+.title{
+    width: 320px;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    margin: 0 auto;
+    &_wrapper{
+        position: relative;
+        width: 320px;
+        display: block;
+        margin: 0 auto;
+    }
+    &_drooling-face{
+        position: absolute;
+        top: 70px;
+        right:4px;
+    }
+}
+.form{
+    @include centerElementFlex;
+    &_container{
+        @include centerElementFlex;
+        width: 578px;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 35px;
+        padding: 97px 95px 47px 95px;
+        margin-top: 17px;
+        flex-direction: column;
+        @media (max-width: 800px ) {
+            width: 430px;
+        }
+        @media (max-width: 550px ) {
+            width: 375px;
+        }
+        @media (max-width: 480px ) {
+            width: 300px;
+        }
+        @media (max-width: 360px) {
+            width: 266px;
+            padding: 97px 65px 47px 81px;
+        }
+    }
+}
+
+.button-form{
+    width: 163px;
+    height: 50px;
+    background: #2D9CDB;
+    border-radius: 15px;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+   
+    &_container-form{
+        display: block;
+        width: 163px;
+        margin: 37px 0 auto;
+    }
+}
+.link{
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    text-align: center;
+    cursor: pointer;
+    &_wrapper{
+        width: 155px;
+        display: flex;
+        text-align: center;
+        margin: 10px 0 47px 0;
+    }
+}
+.img{
+    &_grapes{
+        position: absolute;
+        top: -70px;
+        left: -70px;
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+    
+    &_leaf{
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media (max-width: 360px) {
+            width: 200px;
+            height: 160px;
+            top: 10px;
+            right: 20px;
+        } 
+    }
+    &_orange{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @media (max-width: 480px) {
+            width: 200px;
+            height: 200px;
+        }
+        @media (max-width: 360px) {
+            width: 150px;
+            height: 113px;
+            bottom: 30px;
+            right: 180px;
+        }
+    }
+    &_bitten-apple{
+        width: 154px;
+        height: 151px;
+        position: absolute;
+        bottom: 100px;
+        left: 50px;
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+}
+.input{
+    width: 388px;
+    height: 50px;
+    box-sizing: border-box;
+    background: #F3F3F3;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 37px;
+    padding-left: 13px;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    color: #CC9696;
+    @media (max-width: 1090px) {
+        width: 335px;
+    } 
+    @media (max-width: 550px) {
+        width: 280px;
+    } 
+    @media (max-width: 480px ) {
+        width: 265px;
+    }
+    @media (max-width: 360px ) {
+        width: 230px;
+    }
+    
+    &_wrapper{
+        width: 389px;
+        height: 50px;
+        position:relative;
+        display: block;
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom:40px;
+        @media (max-width: 1090px) {
+            width: 335px;
+        } 
+        @media (max-width: 550px) {
+            width: 290px;
+        } 
+        @media (max-width: 480px ) {
+            width: 265px;
+        }
+        @media (max-width: 360px ) {
+            width: 250px;
+        }
+        
+    }
+   
+}
+.errors{
+    position: absolute;
+    font-size: 12px;
+    bottom: -35px;
+    left: 0;
+    color: red;
+}
+

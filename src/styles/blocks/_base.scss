@@ -1,0 +1,49 @@
+@import 'mixins';
+html, body {
+    box-sizing: border-box;
+    font-family: 'Spartan';
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 100vw;
+   /*  max-height: 100vh; */
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    background-color: #DEEBFB;
+    border-radius: 30px;
+    padding: 20px 50px;
+    position: relative;
+    box-sizing: border-box;
+    @media (max-width: 1440px ) {
+        padding: 20px;
+    }
+    @media (max-width: 1200px ) {
+        margin-top: 0;
+    }
+    
+    @media (max-width: 1090px ) {
+        display: block;
+        margin: 0 auto;
+    }
+    @media (max-width: 450px) {
+        padding: 12px;
+    }
+} 
+.routerHeader{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+.home_wrapper{
+    width: 100vw;
+   /*  height: 100vh; */
+    margin: 0 auto;
+    position: relative;
+    @media (max-width: 1440px ) {
+        @include widthHeight;
+    }
+   
+}
